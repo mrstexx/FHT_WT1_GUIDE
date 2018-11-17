@@ -1,120 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="icon" href="./res/img/logo.ico" >
-    <title>FH Guide</title>
-  </head>
-  <body>
-  <nav class="navbar position-fixed navbar-dark bg-default">
-		<h1>Informationen zum FH-Guide</h1>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=KoHo|Nunito" rel="stylesheet">
+		<!-- Own style -->
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="icon" href="./res/img/logo.ico" >
+		<title>FH Guide</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+			<a class="navbar-brand" href="index.html">
+				<!-- <img class="navbar-photo" src="./res/img/logo.png" alt="FH Guide Bild"> --><span>FH Technikum Guide</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="sites/fh-informations.html"><i class="fas fa-info-circle"></i>
+						FH-Informationen</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sites/live-tour.html"><i class="fas fa-street-view"></i> Live Tour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sites/raumbelegung.html"><i class="fas fa-search"></i> Raumbelegung</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		
-		<ul>
-			<li><a onclick='console.log("FH-Guide wurde geklickt")' href="index.html">FH-Guide</a></li>
-			<li><a onclick='console.log("FH-Informationen wurde geklickt")' href="sites/unterseite1.html">FH-Informationen Allgemein</a></li>
-			<li><a onclick='console.log("Live Tour wurde geklickt")' href="sites/unterseite2.html">Live Tour</a></li>
-			<li><a onclick='console.log("Raumbelegung geklickt")' href="sites/unterseite3.html">Raumbelegung</a></li>
-		</ul>
-		
-		<button onclick='console.log("Es wurde der Burger Menu Button geklickt")' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent15"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-		
-	</nav>
-	<header>
-	</header>
-	
-	<main id="home-0"> <!-- du kannst die IDs so anpassen, wie du sie brauchst für css -->
-			<section id="FHGuide">
+		<header>
+			<div class="jumbotron">
 				<div class="container">
-				<h2>FH Guide</h2>
-					<div>
-						<img class="img-fluid img-thumbnail" src="./res/img/logo.png" alt="FH Guide Bild">
-						<h3>Informationen zu diesem Projekt</h3>
-						<p>
-						Der Tiger ist aufgrund seiner auffälligen Streifenzeichnung mit keiner anderen Großkatze zu verwechseln.
-						Die Grundfarbe der Oberseite schwankt je nach Unterart zwischen goldgelb und rotorange.
+					<h1 class="display-4">Informationen zum FH-Guide</h1>
+					<p class="lead">TDer Tiger ist aufgrund seiner auffälligen Streifenzeichnung mit keiner anderen Großkatze zu verwechseln. Die Grundfarbe der Oberseite schwankt je nach Unterart zwischen goldgelb und rotorange.
 						Die Unterseite sowie Teile des Gesichts und die Innenseiten der Beine sind weiß oder hellbeige.
-						Die Rückseite der Ohren ist schwarz und weist eine deutlich auffallende weiße Markierung auf.
-						Auffällige dunkle Querstreifen erstrecken sich vom Kopf über den gesamten Rumpf bis zur Schwanzspitze.
-						</p>
+					Auffällige dunkle Querstreifen erstrecken sich vom Kopf über den gesamten Rumpf bis zur Schwanzspitze.</p>
+					<hr class="my-4">
+					<p>Die Rückseite der Ohren ist schwarz und weist eine deutlich auffallende weiße Markierung auf.</p>
+				</div>
+			</div>
+		</header>
+		
+		<main id="home"> <!-- du kannst die IDs so anpassen, wie du sie brauchst für css -->
+		<section id=team>
+			<div class="container">
+				<h2 class="text-center">FH Guide Team</h2>
+				<hr>
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<img class="img-thumbnail img-fluid member-image" src="./res/img/stefan.jpg" alt="Stefan Miljevic">
+						<div class="member-content">
+							<div class="member-title">
+								<h3 class="text-center">
+								Stefan Miljevic
+								</h3>
+							</div>
+							<div class="member-text">
+								Stefan ist ein Spezialist, wenn es um Javaskript geht. Er arbeitet zur Zeit bei der Firma YZ und lebt seit einem Jahr in Wien.
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Arbeitet mit Javascript seit X Jahren</li>
+									<li class="list-group-item">Ist der Abteilung XY in seiner Firma</li>
+									<li class="list-group-item">Ich denke dir fällt sicher noch was ein</li>
+									<li class="list-group-item">Warten auf weitere Details nach Beendigung des Projektes</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<img class="img-thumbnail member-image img-fluid" src="./res/img/marius.jpg" alt="Marius Hochwald">
+						<div class="member-content">
+							<div class="member-title">
+								<h3 class="text-center">
+								Marius Hochwald
+								</h3>
+							</div>
+							<div class="member-text">
+								Im Bereich Javascript ist Marius sehr unerfahren, doch durch kleine Hilfen von Stefan ist er auch er in der Lage, komplizierte Algorithmen zu entwerfen und Programme zu schreiben
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Besitzt drei Jahre Berufserfahrung im Bereich Netzwerktechnik und Kundensupport</li>
+									<li class="list-group-item">Im Bereich JavaScript ist er ein Grünschnabel</li>
+									<li class="list-group-item">Warten auf weitere Details nach Beendigung des Projektes</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
-			<section id=team>
-				<div class="container">
-				<h2>FH Guide Team</h2>
-					<h3>Stefan Miljevic</h3>
-					<img class="img-fluid rounded-circle" src="./res/img/stefan.jpg" alt="Stefan Miljevic">
-					<p>
-					Stefan ist ein Spezialist, wenn es um Javaskript geht. Er arbeitet zur Zeit bei der Firma YZ und lebt seit einem Jahr in Wien. 
-						<ul>
-							<li>Arbeitet mit Javascript seit X Jahren</li>
-							<li>Ist der Abteilung XY in seiner Firma</li>
-							<li>Ich denke dir fällt sicher noch was ein</li>
-							<li>Warten auf weitere Details nach Beendigung des Projektes</li>
-						</ul>
-					</p>
-				
-					<h3>Marius Hochwald</h3>
-					<img class="img-fluid rounded-circle" src="./res/img/marius.jpg" alt="Marius Hochwald">
-					<p>
-					Im Bereich Javascript ist Marius sehr unerfahren, doch durch kleine Hilfen von Stefan ist er auch er in der Lage, komplizierte Algorithmen zu entwerfen und Programme zu schreiben
-						<ul>
-							<li>Besitzt drei Jahre Berufserfahrung im Bereich Netzwerktechnik und Kundensupport</li>
-							<li>Im Bereich JavaScript ist er ein Grünschnabel</li>
-							<li>Warten auf weitere Details nach Beendigung des Projektes</li>
-						</ul>
-					</p>
-				</div>
-			</section>
+			</div>
+		</section>
 	</main>
-	
 	<footer>
-		<div class="container">
-		<div class="row">
-		<div class="col-lg-3 col-md-6 col-12">
-			<h4>Soziale Netze</h4>
-			<ul>
-				<li><a href="http://www.facebook.com">Facebook</a></li> <!-- standard a href mit text, welches zum genannten Link weitergeht. -->
-				<li><a href="http://www.twitter.com">Twitter</a></li>
-				<li><a href="http://www.instagram.com">Instagram</a></li>
-			</ul>
-		</div>
-		<div class="col-lg-3 col-md-6 col-12">
-			<h4>Kontakt</h4>
-			<ul>
-				<li>Adresse</li>
-				<li><a href="http://www.technikum-wien.at">Webpräsenz</a></li>
-				<li><a href="mailto:if18b159@technikum-wien.at" target="_top">Mail</a></li> <!-- öffnet den lokalen maildienst mit den Daten, die man hier gesetzt hat -->
-			</ul>
-		</div>
-		<div class="col-lg-3 col-md-6 col-12">
-			<h4>Terms of Use</h4>
-			<ul>
-				<li>Copyright</li>
-				<li>Privacy Policy</li>
-			</ul>
-		</div>
-		<div class="col-lg-3 col-md-6 col-12">
-			<h4>About</h4>
-			<ul>
-				<li>FH Technikum Wien</li>
-				<li>Bachelor Informatik</li>
-				<li>1200 Wien</li>
-			</ul>
-		</div>
-		</div>
+		<div id="footer-content" class="container">
+			<div class="row">
+				<div class="footer-item col-lg-3 col-md-6 col-sm-12">
+					<h4>Soziale Netze</h4>
+					<ul class="nav">
+						<li><a href="https://facebook.com/fhtechnikumwien/" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/fhtechnikumwien" target="_blank">Twitter</a></li>
+						<li><a href="https://www.instagram.com/technikum_wien/" target="_blank">Instagram</a></li>
+					</ul>
+				</div>
+				<div class="footer-item col-lg-3 col-md-6 col-sm-12">
+					<h4>Kontakt</h4>
+					<ul class="nav">
+						<li>
+							<a href="https://www.google.at/maps/place/FH+Technikum+Wien/@48.2392831,16.3773241,15z/data=!4m5!3m4!1s0x0:0x99fec738bbb12f9d!8m2!3d48.2392831!4d16.3773241" target="_blank">Adresse</a>
+						</li>
+						<li>
+							<a href="http://www.technikum-wien.at/" target="_blank">Webpräsenz</a>
+						</li>
+						<li>
+							<a href="mailto:info@technikum-wien.at">Mail</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item col-lg-3 col-md-6 col-sm-12">
+					<h4>Terms of Use</h4>
+					<ul class="nav">
+						<li>Copyright</li>
+						<li>Privacy Policy</li>
+					</ul>
+				</div>
+				<div class="footer-item col-lg-3 col-md-6 col-sm-12">
+					<h4>About</h4>
+					<ul class="nav">
+						<li>FH Technikum Wien</li>
+						<li>Bachelor Informatik</li>
+						<li>1200 Wien</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
