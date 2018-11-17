@@ -3,6 +3,8 @@ body {
 	background-color: #edf9ff;
 }
 
+/* NAVBAR STYLR */
+
 .navbar {
 	background-color: #26A69A!important;
 }
@@ -56,17 +58,7 @@ ul.navbar-nav li a:hover:after {
   width: 100%;
 }
 
-.member-image {
-	height: 200px;
-}
-
-.member-text {
-	padding: 10px;
-}
-
-.list-group-item {
-	background-color: unset;
-}
+/*FOOTER STYLE*/
 
 footer {
 	background-color: #d2f1ee;
@@ -130,4 +122,25 @@ footer ul.nav {
 	footer h4 {
 		padding-left: 10px;
 	}
+}
+
+/* INDEX PAGE STYE */
+
+.member-image {
+	height: 200px;
+}
+
+.member-text {
+	padding: 10px;
+}
+
+.list-group-item {
+	background-color: unset;
+}
+
+/* FH INFORMATIONEN PAGE */
+
+#map {
+	height: 300px;
+	width: 100%;
 }
