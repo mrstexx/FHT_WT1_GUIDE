@@ -1,6 +1,16 @@
+/* DEFAULT STYLE */
 body {
 	font-family: 'KoHo', sans-serif;
 	background-color: #edf9ff;
+}
+
+.btn-primary {
+	background-color: #26A69A!important;
+	border-color: #26A69A!important;
+}
+
+h2 {
+	padding: 20px 0px;
 }
 
 /* NAVBAR STYLR */
@@ -143,4 +153,27 @@ footer ul.nav {
 #map {
 	height: 300px;
 	width: 100%;
+}
+
+.carousel-caption {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 15px;
+}
+
+#informations {
+	padding-bottom: 30px;
+}
+
+.card {
+	margin: 10px 0px;
+	border-color: #26A69A;
+}
+
+.card-header {
+	background-color: #00ab9b;
+	color: #f2faff;
+}
+
+.card-body {
+	background-color: #f2faff;
 }
