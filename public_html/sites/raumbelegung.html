@@ -52,18 +52,20 @@
 				<h4>Wählen Sie eine Option, um Informationen zum Raum zu erhalten</h4>
 				<hr>
 				<div class="row justify-content-center search-options">
-					<div class="search">
+					<div class="search" onclick="setListe()">
 						<i class="fas fa-search"></i>
 						<h6>Name</h6>
 					</div>
-					<div class="search">
+					<div class="search" onclick="setQRCODE()">
 						<i class="fas fa-qrcode"></i>
 						<h6>QR Code</h6>
 					</div>
-					<div class="search">
+					<div class="search" onclick="onClickLogjsonTest()">
 						<i class="far fa-list-alt"></i>
 						<h6>Liste</h6>
 					</div>
+				</div>
+				<div id="raumbelegung-struktur">
 				</div>
 			</div>
 		</section>
@@ -114,8 +116,11 @@
 	</footer>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="../script/name.js"></script>
+	<script src="../script/liste.js"></script>
+	<script src="../script/qr-code.js"></script>
 </body>
 </html>
