@@ -1,3 +1,6 @@
+function setQRCODE() {
+}
+
 function nameValid() {
 }
 
