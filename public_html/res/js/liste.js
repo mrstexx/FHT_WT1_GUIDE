@@ -95,7 +95,8 @@ function loadRoomData(roomNumber) {
                     pagingType: "simple_numbers",
                     searching: false,
                     destroy: true,
-                    ordering: false
+                    ordering: false,
+                    lengthChange: false
                 });
                 $('.dataTables_length').addClass('bs-select');
                 console.log("EDV_A" + roomNumber + " ready!");

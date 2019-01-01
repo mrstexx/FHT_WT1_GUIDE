@@ -223,7 +223,7 @@ footer ul.nav {
 }
 
 #searchbar {
-    width: 300px;
+    width: 250px;
     background-color: transparent;
     border: 0;
     padding: 0px 10px 10px 10px;
@@ -255,10 +255,50 @@ footer ul.nav {
     overflow-x: auto;
 }
 
+.search-button {
+    background-color: transparent;
+    border: 0;
+}
+
+.search-button i {
+    font-size: 20px;
+    color: #26A69A;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.wrong-name {
+    margin-top: 10px;
+    color: rgb(201, 95, 95);
+}
+
+/* Override MDB style */
+
 .pagination .page-item.active .page-link:hover {
     background-color: #26A69A!important;
 }
 
 .pagination .page-item.active .page-link {
     background-color: #26A69A!important;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,.5)!important;
+    transition: none;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
+    background-color: #26A69A;
+    color: white!important;
+}
+
+.navbar {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar .nav-item .nav-link .fas {
+    padding: 0!important;
 }
