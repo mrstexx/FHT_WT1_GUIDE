@@ -17,6 +17,10 @@ $('#raumbelegung-structure').on ('click', '.search-button', function () {
     nameSearch(enteredText);
 });
 
+/**
+ * Function used to validate entered name
+ * @param {String} enteredText 
+ */
 function isValidName(enteredText) {
     enteredText = enteredText.trim ().toLowerCase ();
     if ((enteredText === "edva206" || enteredText === "edva207" || 

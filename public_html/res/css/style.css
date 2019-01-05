@@ -1,12 +1,7 @@
 /* DEFAULT STYLE */
-html {
-    height: 100%;
-}
-
 body {
     font-family: 'KoHo', sans-serif;
     background-color: #edf9ff;
-    height: 100%;
 }
 
 main {
@@ -188,7 +183,18 @@ footer ul.nav {
     background-color: #f2faff;
 }
 
+/* LIVE TOUR PAGE STYLE */
+
+#video-controls video {
+    width: 100%;
+    margin: 15px auto;
+}
+
 /* RAUMBELEGUNG PAGE STYLE */
+
+#raumbelegung {
+    padding-bottom: 50px;
+}
 
 .search-options {
     margin: 40px 0px;

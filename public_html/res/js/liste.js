@@ -43,6 +43,10 @@ $('#raumbelegung-structure').on('change', 'select', function () {
     loadRoomData(roomNumber);
 });
 
+/**
+ * Main function used for ajax call of xml files and showing results in table
+ * @param {String} roomNumber 
+ */
 function loadRoomData(roomNumber) {
     // load xml room via alax call with room number
     if (Number.isInteger(parseInt(roomNumber))) {
@@ -90,6 +94,8 @@ function loadRoomData(roomNumber) {
                 });
                 navStructure += '</tbody>';
                 $('#table-results').append(navStructure);
+                
+                // DataTable html5 and JS library for table paginnation and material design
                 $('#table-results').DataTable({
                     paging: true,
                     pagingType: "simple_numbers",
@@ -99,6 +105,7 @@ function loadRoomData(roomNumber) {
                     lengthChange: false
                 });
                 $('.dataTables_length').addClass('bs-select');
+                
                 console.log("EDV_A" + roomNumber + " ready!");
             },
             error: function () {
