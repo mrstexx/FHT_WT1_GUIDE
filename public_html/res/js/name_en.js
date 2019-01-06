@@ -39,6 +39,6 @@ function nameSearch(enteredText) {
         var roomNumber = enteredText.replace(/[^0-9]/g, '');
         loadRoomData(roomNumber);
     } else {
-        $('#raumbelegung-structure').append ('<h6 class="wrong-name">Raumname mit eingegebenem Text existiert nicht! Geben Sie einen echten Namen ein.</h6>');
+        $('#raumbelegung-structure').append ('<h6 class="wrong-name">Entered roomname does not exist! Please enter a valid one.</h6>');
     }
 }
