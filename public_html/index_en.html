@@ -11,20 +11,20 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=KoHo%7CNunito" rel="stylesheet">
 		<!-- Own style -->
-		<link rel="stylesheet" href="../res/css/style.css">
-		<link rel="icon" href="../res/img/logo.ico" >
-		<title>FH Technikum Live Tour</title>
+		<link rel="stylesheet" href="res/css/style.css">
+		<link rel="icon" href="./res/img/logo.ico" >
+		<title>FH Technikum Guide</title>
 		<meta name="keywords" content="fh, technikum, wien, raumbelegung, information, live, tour, qr, code, google, maps, hochwald, miljevic, marius, stefan, team.">
 		<meta name="description" content="EDV-Rauminformationen schnell zu Hand! Schnell und einfach die besten Informationen zu allen EDV-Räumen der FH-Technikum Wien">
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-			<a class="navbar-brand" href="../index.html">
+			<a class="navbar-brand" href="index_en.html">
 				<!-- <img class="navbar-photo" src="./res/img/logo.png" alt="FH Guide Bild"> --><span>FH Technikum Guide</span>
 			</a>
-			<a class="navbar-brand" href="live-tour_en.html">
+			<a class="navbar-brand" href="index.html">
 				<span>
-					<img class="thumbnail" src="../res/img/england.png"></img>
+					<img class="thumbnail" src="./res/img/austria.png"></img>
 				</span>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,45 +32,88 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html"><i class="fas fa-home"></i>
-						Startseite</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="fh-informations.html"><i class="fas fa-info-circle"></i>
-						FH-Informationen</a>
-					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="live-tour.html"><i class="fas fa-street-view"></i> Live Tour</a>
+						<a class="nav-link" href="index_en.html"><i class="fas fa-home"></i>
+						Start page</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="raumbelegung.html"><i class="fas fa-search"></i> Raumbelegung</a>
+						<a class="nav-link" href="sites/fh-informations_en.html"><i class="fas fa-info-circle"></i>
+						FH-Information</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sites/live-tour_en.html"><i class="fas fa-street-view"></i> Live Tour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sites/raumbelegung_en.html"><i class="fas fa-search"></i> Room schedule</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
+		
 		<header>
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="display-4">Information about the FH-Guide</h1>
+					<p class="lead">You want to know at which time the EDV-Rooms are avalable? Piece of cake! This Homepage will help you gathering information about the FH-Buildings, getting a decent amount of information from a video
+					and getting the latest course unit information about every EDV-Room in the building</p>
+					<hr class="my-4">
+					<p>In this sector, the start page, you can find out which two person have created the website</p>
+					<a class="btn btn-primary btn-lg" href="sites/fh-informations_en.html">More about the FH</a>
+				</div>
+			</div>
 		</header>
 		
-		<main id="home-2">
-		<section id="Kurzes_Video">
+		<main id="home"> <!-- du kannst die IDs so anpassen, wie du sie brauchst für css -->
+		<section id=team>
 			<div class="container">
-				<h2>Hörsaal und Gebäude-Außensicht</h2>
-				<div id="video-controls">
-					<video controls>
-						<source src="../res/img/projekttest.mp4" type="video/mp4">
-						I'm sorry; your browser doesn't support HTML5 video in WebM with VP8/VP9 or MP4 with H.264.
-					</video>
+				<h2 class="text-center">FH Guide Team</h2>
+				<hr>
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<img class="img-thumbnail img-fluid member-image" src="./res/img/stefan.jpg" alt="Stefan Miljevic">
+						<div class="member-content">
+							<div class="member-title">
+								<h3 class="text-center">
+								Stefan Miljevic
+								</h3>
+							</div>
+							<div class="member-text">
+								Stefan is a specialist regarding JavaScript. He is working and going to the FH, living in vienna since a year.
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Experienced in javascript since 3 years</li>
+									<li class="list-group-item">Works in the web developement sector</li>
+									<li class="list-group-item">He is responsible for nearly every javaScript implementation, ajax calls etc.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<img class="img-thumbnail member-image img-fluid" src="./res/img/marius.jpg" alt="Marius Hochwald">
+						<div class="member-content">
+							<div class="member-title">
+								<h3 class="text-center">
+								Marius Hochwald
+								</h3>
+							</div>
+							<div class="member-text">
+								Very unexperienced with javascript, still eager enough to give 100%
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Has 3 years experience in IT Network and Customersupport</li>
+									<li class="list-group-item">Recently started with javascript</li>
+									<li class="list-group-item">Responsible for the groundstructure, live video, meta keys etc.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	
 	<footer>
 		<div id="footer-content" class="container">
 			<div class="row">
 				<div class="footer-item col-lg-3 col-md-6 col-sm-12">
-					<h4>Soziale Netze</h4>
+					<h4>Social Network</h4>
 					<ul class="nav">
 						<li><a href="https://facebook.com/fhtechnikumwien/" target="_blank">Facebook</a></li>
 						<li><a href="https://twitter.com/fhtechnikumwien" target="_blank">Twitter</a></li>
@@ -81,10 +124,10 @@
 					<h4>Kontakt</h4>
 					<ul class="nav">
 						<li>
-							<a href="https://www.google.at/maps/place/FH+Technikum+Wien/@48.2392831,16.3773241,15z/data=!4m5!3m4!1s0x0:0x99fec738bbb12f9d!8m2!3d48.2392831!4d16.3773241" target="_blank">Adresse</a>
+							<a href="https://www.google.at/maps/place/FH+Technikum+Wien/@48.2392831,16.3773241,15z/data=!4m5!3m4!1s0x0:0x99fec738bbb12f9d!8m2!3d48.2392831!4d16.3773241" target="_blank">Address</a>
 						</li>
 						<li>
-							<a href="http://www.technikum-wien.at/" target="_blank">Webpräsenz</a>
+							<a href="http://www.technikum-wien.at/" target="_blank">Web</a>
 						</li>
 						<li>
 							<a href="mailto:info@technikum-wien.at">Mail</a>
