@@ -2,7 +2,7 @@ $('#nameSearch').on('click', function () {
     $('#table-results').empty();
     $('#raumbelegung-structure').empty();
     $('#table-results_wrapper').hide();
-    $('#raumbelegung-structure').prepend('<input type="text" id="searchbar" class="mx-auto" placeholder="Geben Sie Raumname ein"> <button class="search-button"><i class="fa fa-search"></i></button>');
+    $('#raumbelegung-structure').prepend('<input type="text" id="searchbar" class="mx-auto" role="searchbox" placeholder="Geben Sie Raumname ein"> <button class="search-button" role="button" aria-label="Room Search"><i class="fa fa-search"></i></button>');
 });
 
 $('#raumbelegung-structure').on ('keydown', '#searchbar', function (event) {
@@ -39,6 +39,6 @@ function nameSearch(enteredText) {
         var roomNumber = enteredText.replace(/[^0-9]/g, '');
         loadRoomData(roomNumber);
     } else {
-        $('#raumbelegung-structure').append ('<h6 class="wrong-name">Raumname mit eingegebenem Text existiert nicht! Geben Sie einen echten Namen ein.</h6>');
+        $('#raumbelegung-structure').append ('<h6 class="wrong-name" role="alert">Raumname mit eingegebenem Text existiert nicht! Geben Sie einen echten Namen ein.</h6>');
     }
 }

@@ -116,7 +116,7 @@ function loadRoomData(roomNumber) {
 }
 
 function getList() {
-    var listStructure = '<div class="form-group"><select class="form-control mx-auto" id="listSelection"><option value="0" selected>Wählen Sie Raum aus</option>';
+    var listStructure = '<div class="form-group"><select class="form-control mx-auto" id="listSelection" role="listbox"><option value="0" selected>Wählen Sie Raum aus</option>';
     for (var i = 0; i < listOfRooms.length; i++) {
         listStructure += '<option value="' + (i + 1) + '">' + listOfRooms[i].value + '</option>';
     }

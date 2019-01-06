@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<!-- Required meta tags -->
@@ -52,10 +52,10 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-		<a class="navbar-brand" href="../index.html">
+		<a class="navbar-brand" href="../index.html" role="button" aria-label="Startseite">
 			<!-- <img class="navbar-photo" src="./res/img/logo.png" alt="FH Guide Bild"> --><span>FH Technikum Guide</span>
 		</a>
-		<a class="navbar-brand" href="raumbelegung_en.html">
+		<a class="navbar-brand" href="raumbelegung_en.html" role="button" aria-label="Change language">
 			<span>
 				<img class="thumbnail" src="../res/img/england.png"></img>
 			</span>
@@ -65,20 +65,20 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
+			<ul class="navbar-nav ml-auto" role="menu">
 				<li class="nav-item">
-					<a class="nav-link" href="../index.html"><i class="fas fa-home"></i>
+					<a class="nav-link" href="../index.html" role="menuitem" aria-label="Startseite"><i class="fas fa-home"></i>
 						Startseite</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="fh-informations.html"><i class="fas fa-info-circle"></i>
+					<a class="nav-link" href="fh-informations.html" role="menuitem" aria-label="FH-Informationen"><i class="fas fa-info-circle"></i>
 						FH-Informationen</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="live-tour.html"><i class="fas fa-street-view"></i> Live Tour</a>
+					<a class="nav-link" href="live-tour.html" role="menuitem" aria-label="Live Tour"><i class="fas fa-street-view"></i> Live Tour</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="raumbelegung.html"><i class="fas fa-search"></i> Raumbelegung</a>
+					<a class="nav-link" href="raumbelegung.html" role="menuitem" aria-label="Raumbelegung"><i class="fas fa-search"></i> Raumbelegung</a>
 				</li>
 			</ul>
 		</div>
@@ -95,24 +95,24 @@
 				<hr>
 				<div class="row justify-content-center search-options">
 					<div class="search">
-						<i id="nameSearch" class="fas fa-search"></i>
+						<i id="nameSearch" class="fas fa-search" tabindex="0" role="button" aria-label="Namesuche"></i>
 						<h6>Name</h6>
 					</div>
 					<div class="search">
-						<i id="qrCodeSearch" class="fas fa-qrcode"></i>
+						<i id="qrCodeSearch" class="fas fa-qrcode" tabindex="0" role="button" aria-label="QRCode Suche"></i>
 						<h6>QR Code</h6>
 					</div>
 					<div class="search">
-						<i id="listSearch" class="far fa-list-alt"></i>
+						<i id="listSearch" class="far fa-list-alt" tabindex="0" role="button" aria-label="Listesuche"></i>
 						<h6>Liste</h6>
 					</div>
 				</div>
 				<div id="raumbelegung-structure">
-					<input type="text" id="searchbar" class="mx-auto" placeholder="Geben Sie Raumname ein">
-					<button class="search-button"><i class="fa fa-search"></i></button>
+					<input type="text" id="searchbar" class="mx-auto" placeholder="Geben Sie Raumname ein" role="searchbox">
+					<button class="search-button" role="button" aria-label="Raumsuche"><i class="fa fa-search"></i></button>
 				</div>
 				<div id="raumbelegung-results">
-					<table id="table-results" class="table table-striped table-bordered table-sm">
+					<table id="table-results" class="table table-striped table-bordered table-sm" role="table" aria-label="Table">
 					</table>
 				</div>
 			</div>

@@ -193,7 +193,7 @@ footer ul.nav {
 /* RAUMBELEGUNG PAGE STYLE */
 
 #raumbelegung {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .search-options {
@@ -278,6 +278,10 @@ footer ul.nav {
 .wrong-name {
     margin-top: 10px;
     color: rgb(201, 95, 95);
+}
+
+#nameSearch:focus, #qrCodeSearch:focus, #listSearch:focus {
+    border: 2px solid #004D40;
 }
 
 /* QR Code style */

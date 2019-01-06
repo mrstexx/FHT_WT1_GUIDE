@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('#raumbelegung-structure .wrong-name').empty();
         $('#raumbelegung-structure').empty();
         $('#table-results_wrapper').hide();
-        $('#raumbelegung-structure').prepend('<button class="btn btn-primary" id="qr-button">Take new photo</button>' +
+        $('#raumbelegung-structure').prepend('<button class="btn btn-primary" role="button" id="qr-button">Take new photo</button>' +
             '<div class="video-container">' +
             '<video id="video-preview"></video>' +
             '<canvas id="qr-canvas" class="hidden"></canvas>' +
@@ -61,7 +61,7 @@ function tick() {
                 var roomNumber = result.replace(/[^0-9]/g, '');
                 loadRoomData(roomNumber);
             } else {
-                $('#raumbelegung-structure').append('<h6 class="wrong-name">Raumname mit eingegebenem QR-Code existiert nicht.</h6>');
+                $('#raumbelegung-structure').append('<h6 class="wrong-name" role="alert">Raumname mit eingegebenem QR-Code existiert nicht.</h6>');
             }
         } catch (e) {
             /* No Op */
