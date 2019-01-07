@@ -23,25 +23,25 @@
 	<link rel="icon" href="../res/img/logo.ico">
 
 	<!-- JQuery -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- QR CODE SCANNER REQUIRED LIBRARIES -->
-	<script type="text/javascript" src="../res/js/qr-scanner/grid.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/version.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/detector.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/formatinf.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/errorlevel.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/bitmat.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/datablock.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/bmparser.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/datamask.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/rsdecoder.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/gf256poly.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/gf256.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/decoder.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/qrcode.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/findpat.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/alignpat.js"></script>
-	<script type="text/javascript" src="../res/js/qr-scanner/databr.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- QR LIBRARIES -->
+	<script src="../res/js/qr-scanner/grid.js"></script>
+	<script src="../res/js/qr-scanner/version.js"></script>
+	<script src="../res/js/qr-scanner/detector.js"></script>
+	<script src="../res/js/qr-scanner/formatinf.js"></script>
+	<script src="../res/js/qr-scanner/errorlevel.js"></script>
+	<script src="../res/js/qr-scanner/bitmat.js"></script>
+	<script src="../res/js/qr-scanner/datablock.js"></script>
+	<script src="../res/js/qr-scanner/bmparser.js"></script>
+	<script src="../res/js/qr-scanner/datamask.js"></script>
+	<script src="../res/js/qr-scanner/rsdecoder.js"></script>
+	<script src="../res/js/qr-scanner/gf256poly.js"></script>
+	<script src="../res/js/qr-scanner/gf256.js"></script>
+	<script src="../res/js/qr-scanner/decoder.js"></script>
+	<script src="../res/js/qr-scanner/qrcode.js"></script>
+	<script src="../res/js/qr-scanner/findpat.js"></script>
+	<script src="../res/js/qr-scanner/alignpat.js"></script>
+	<script src="../res/js/qr-scanner/databr.js"></script>
 
 	<script src="../res/js/qr-code_en.js"></script>
 
@@ -57,7 +57,7 @@
 		</a>
 		<a class="navbar-brand" href="raumbelegung.html" role="button" aria-label="Change language">
 			<span>
-				<img class="thumbnail" src="../res/img/austria.png"></img>
+				<img class="thumbnail" src="../res/img/austria.png" alt="Change language">
 			</span>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -65,7 +65,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto" role="menuitem">
+			<ul class="navbar-nav ml-auto" role="menu">
 				<li class="nav-item">
 					<a class="nav-link" href="../index_en.html" role="menuitem" aria-label="Start page"><i class="fas fa-home"></i>
 						Start page</a>
@@ -109,10 +109,10 @@
 				</div>
 				<div id="raumbelegung-structure">
 					<input type="text" id="searchbar" class="mx-auto" placeholder="Enter roomname" role="searchbox">
-					<button class="search-button" role="button" aria-label="Room search"><i class="fa fa-search"></i></button>
+					<button class="search-button" aria-label="Room search"><i class="fa fa-search"></i></button>
 				</div>
 				<div id="raumbelegung-results">
-					<table id="table-results" class="table table-striped table-bordered table-sm" role="table" aria-label="Table">
+					<table id="table-results" class="table table-striped table-bordered table-sm" aria-label="Table">
 					</table>
 				</div>
 			</div>
@@ -165,13 +165,13 @@
 		</div>
 	</footer>
 	<!-- Bootstrap tooltips -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
 	<!-- MDBootstrap Datatables  -->
-	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
+	<script src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
 	<!-- Optional JavaScript -->
 	<script src="../res/js/liste_en.js"></script>
 	<script src="../res/js/name_en.js"></script>
